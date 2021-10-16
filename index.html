@@ -4,9 +4,9 @@
     
 </head>
 <body style="background-color: rgb(198, 238, 225);">
-    <h1 style="color:rgb(197, 64,97); size: 50px;">Forza Horizon 5</h1>
-    <p style="color: rgb(197, 64,97); size: 50px;">November 9.</p>
-    <a style="color: rgb(197, 64,97) ;" href="https://www.youtube.com/watch?v=NACvuFhigqI">Videó</p>
+    <h1 style="color:rgb(197, 64,97); size: 80px;">Forza Horizon 5</h1>
+    <p style="color: rgb(197, 64,97); size: 70px;">November 9.</p>
+    <a style="color: rgb(197, 64,97) ;" href="https://www.youtube.com/watch?v=NACvuFhigqI">Videó</a>
     <img style="float: initial;border-style: ridge;" src="https://gepig.com/game_cover_460w/6776.jpg">  
     <button style="color:rgb(197, 64,97);" href="https://www.youtube.com/watch?v=LqrC3XUqkpA">FORZA</button>
     <form action="/action_page.php">
@@ -14,5 +14,51 @@
 <input type="file" id="mYfile" name="myfile"><br><br>
 <input type="submit">
 </form>
+<audio controls autoplay>
+    <source src="gangsta.mp3.mp3" type="audio/mpeg">
+    <source src="gangsta.mp3.mp3" type="audio/ogg">
+</audio>
+<video width="320" height="240" controls>
+    <source src="coolio-gangstas-paradise-feat-l-v-official-music-video.mp4" type="video/mp4">
+    <source src="coolio-gangstas-paradise-feat-l-v-official-music-video.mp4" type="video/ogg">
+</video>
+<style>
+    #div1, #div2 {
+      float: left;
+      width: 300px;
+      height: 300px;
+      margin: 10px;
+      padding: 10px;
+      border: 5px solid black;
+    }
+    </style>
+    <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+    
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+    
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+    }
+    </script>
+    </head>
+    <body>
+    
+    
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="z5koreletjk61.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="300" height="300">
+          </div>
+          
+          <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    
+    </body>
+    </html>
+
 </body>
-</html>
+</html
